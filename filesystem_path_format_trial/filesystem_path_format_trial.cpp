@@ -10,8 +10,8 @@
 
 int main()
 {
-	//under c++17, the filesystem library is in std::experimental.
-	//from c++17, it is known to be in std like others
+	//under c++17, the filesystem library is in std::experimental
+	//from c++17, it is known to be in std like other members
 	std::cout << "STD Filesystem format conversion demonstration" << std::endl;
 
 	// Windows style of a file path
@@ -21,7 +21,7 @@ int main()
 	// constructing a std::filesystem type
 	std::experimental::filesystem::path file_path(file_path_raw);
 
-	// convert it in UNIX format (or the one I prefer)
+	// convert it into UNIX format (or the one I prefer)
 	std::string file_path_unix = file_path.generic_string();
 	std::cout << "\nUNIX format: \n" << file_path_unix << std::endl;
 
