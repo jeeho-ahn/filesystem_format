@@ -10,7 +10,7 @@
 
 int main()
 {
-	//under c++17, the filesystem library is in std::experimental
+	//below c++17, the filesystem library is in std::experimental
 	//from c++17, it is known to be in std like other members
 	std::cout << "STD Filesystem format conversion demonstration" << std::endl;
 
